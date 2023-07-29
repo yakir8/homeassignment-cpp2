@@ -76,7 +76,7 @@ void CVectorInt::shrink() {
 	if ((float) size() / capacity() < 0.5) {
 		// resize the vector length
 		expend_length = std::ceil((float) expend_length / 2);
-		// save the pointer to original arr
+		// save the pointer of original arr
 		int *temp = arr;
 		arr = new int[expend_length];
 		// copy original arr to new array with the new size
@@ -93,7 +93,7 @@ void CVectorInt::expand() {
 	if (expend_length == index) {
 		// resize the vector length
 		expend_length = expend_length * 2;
-		// save the pointer to original arr
+		// save the pointer of original arr
 		int *temp = arr;
 		arr = new int[expend_length];
 		// copy original arr to new array with the new size

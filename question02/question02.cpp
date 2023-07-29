@@ -16,9 +16,9 @@
 
 /*
 // ============================================================Answer============================================
-// Because we have two thread that accesses to the same variable named 'gSum'.
-// In same cases thread1 read the value of gSum and before its write the new value thread 2 write new value to gSum.
-// I resolved this by using semaphore that lock access to this variable if another thread already use this variable.
+// Because we have two threads that accesses to the same variable named 'gSum' in same cases thread1 read the value of gSum 
+// and before its write the new value thread 2 write new value to gSum. In this case the data on gSum will be corrupted
+// I resolved this by using semaphore that lock access to this variable if another thread already use it.
 // In this way only one thread can access to the variable every time.
 */
 

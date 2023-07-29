@@ -26,8 +26,8 @@
  // ============================================================Answer============================================
  // 1. See my Implementation below  
  // 2. It is compiled successfully because the operator && return variable type of bool, 
- //	   If we change the type to 'MyBool' the compile will be Failed
- // 3. No, we got run time error on calling this function greaterThanZero(a).
+ //	   If we change the type to 'MyBool' the compile will be failed
+ // 3. No, we got run time error on calling this function 'greaterThanZero(a)'.
  //	   Becouse pinter a is 'nullptr' we can't read/check logic on it.
  //    We can add protection by cheking first if the pointer is null and if so return false.
  // 4. See my answer above 

@@ -16,12 +16,12 @@
 /*
 // ============================================================Answer============================================
 // The is a memory leak is on payload struct that didn't free at the end of used
-// I added 3 function on Paylaod struct with semaphore protection that count the number of thread that use this resource
-// 1. open() -> increased the number of used this resource 
-// 2. close() -> decreased the number of used this resource 
-// 3. is_open() -> return true if there is tread used this resource 
-// In each thread I declare on starting using payload and finish.
-// At the end of the thread I check if there is any thred that use this resource if not I free it
+// I added 3 function on Paylaod struct with semaphore protection that count the number of threads that use this resource
+// 1. open() -> increased the number of threads using this resource 
+// 2. close() -> decreased the number of threads using this resource 
+// 3. is_open() -> return true if there is tread using this resource 
+// In each thread I declare on start using payload and finish.
+// At the end of the thread I check if there is any another thred that use this resource, if not I free it.
 */
 
 
